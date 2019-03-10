@@ -11,13 +11,13 @@ Wejściowe parametry sieci
 -------------------------
 | Parametr | wartość | komentarz(opcionalny) |
 | ------------- |:-------------:| -----:|
-|   PC 1 |  
-| IP - address  | | |
-| MASKA  | | |
+|   PC 1 |  CentOS
+| IP - address  | 10.0.2.4 | |
+| MASKA  | 255.255.0.0 | |
 |   |  | |
-| PC 2  |  | |
-| IP - address  | | |
-| MASKA  | | |
+| PC 2  | Debian | |
+| IP - address  | 10.0.2.15 | |
+| MASKA  | 255.255.0.0 | |
 
 Weryfikacja połączenia
 
@@ -81,10 +81,10 @@ Warto wiedzieć
 -------------------------
 | Parametr | wartość | komentarz(opcionalny) |
 | ------------- |:-------------:| -----:|
-| Lokalizacja pliku z konfiguracją sieci| | |
-| UP -> Wyłączenie interfejsu sieciowego| | |
-| DOWN -> Włączenie interfejsu sieciowego| | |
-| Sprawdzenie obecnych parametrów | | |
-| lista wszystkich interfejsów | | |
-| Które interfejsy jakie porty słuchają | | |
+| Lokalizacja pliku z konfiguracją sieci| /etc/network/interfaces | |
+| UP -> Wyłączenie interfejsu sieciowego| ifdown | |
+| DOWN -> Włączenie interfejsu sieciowego| ifup | |
+| Sprawdzenie obecnych parametrów | nmcli device show | |
+| lista wszystkich interfejsów | ip addr | |
+| Które interfejsy jakie porty słuchają |  | |
 
