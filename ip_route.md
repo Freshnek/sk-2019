@@ -17,7 +17,8 @@ ip
 |               |   ``ip route add default adres dev nazwa``             | |
 |               |   ``ip route show``             | |
 |               |   ``ip route get adres``             | |
-
+|``Wlaczenie przekazywania adresów na Kernelu``| ``cat /proc/sys/net/ipv4/ip_forward``|
+|``Jesli jest ustawione 0 zmieniamy na 1`` |``echo 1 > /proc/sys/net/ipv4/ip_forward``|
 
 Zadanie
 ------------
