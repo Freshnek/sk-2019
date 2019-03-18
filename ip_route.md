@@ -14,7 +14,9 @@ ip
 | subcommand    |  polecenie   | opis  |
 | ------------- |:-------------| :---------------| 
 |   ``route``    |                               | |
-|               |   ``ip route add``             | |
+|               |   ``ip route add default adres dev nazwa``             | |
+|               |   ``ip route show``             | |
+|               |   ``ip route get adres``             | |
 
 
 Zadanie
