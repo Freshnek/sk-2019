@@ -14,9 +14,10 @@ ip
 | subcommand    |  polecenie   | opis  |
 | ------------- |:-------------| :---------------| 
 |   ``route``    |                               | |
-|               |   ``ip route add default adres dev nazwa``             | |
-|               |   ``ip route show``             | |
-|               |   ``ip route get adres``             | |
+|               |   ``ip route add default adres dev nazwa``             | dodawanie routingu domyslnego na dany adres na dany interfejs |
+|               |   ``ip route del default adres dev nazwa``             | usuwanie routingu domyslnego na dany adres na dany interfejs |
+|               |   ``ip route show``             | pokazywanie tablicy routingowych |
+|               |   ``ip route get adres``             | wyswietla adres brany z tablicy routingu |
 |``Wlaczenie przekazywania adresów na Kernelu``| ``cat /proc/sys/net/ipv4/ip_forward``|
 |``Jesli jest ustawione 0 zmieniamy na 1`` |``echo 1 > /proc/sys/net/ipv4/ip_forward``|
 
