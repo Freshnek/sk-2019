@@ -7,16 +7,16 @@ Struktura adresu IP
 Adres sieci
 -----------
 
-1. 
-2.
-3.
+1. binary adres
+2. binary maska
+3. binary and
 
 Adres rozgłoszeniowy
 -----------
 
-1. 
-2.
-3.
+1. binary aders
+2. binary odwrotnosc maski
+3. binary or
 
 
 Podział na równą ilość podsieci
