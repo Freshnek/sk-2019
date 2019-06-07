@@ -109,8 +109,8 @@ Poziom 0
 #### Łącznie stanowisk planowanych: 420
 
 Diagram DIA
------------
-![Zadanie22](Zadanie2.svg)
+----------
+![Zadanie2](Zadanie2.svg)
 ---
 
 Konfiguracja prototypowego rozwiązania
