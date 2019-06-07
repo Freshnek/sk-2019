@@ -110,7 +110,7 @@ Poziom 0
 
 Diagram DIA
 -----------
-
+![Zadanie2](Zadanie2.svg)
 
 ---
 
