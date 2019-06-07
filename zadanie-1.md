@@ -9,6 +9,8 @@ Zaproponuj rozwiązanie spełniające poniższe wymagania:
    * Zapewnij komunikację z siecią internet na poziomie ``LAN1`` oraz ``LAN2``
    * Dokonaj takiego podziału sieci o adresie ``172.22.128.0/17`` aby w ``LAN1`` można było zaadresować ``500`` adresów natomiast w LAN2 ``5000`` adresów    
    * Przygotuj dokumentację powyższej architektury w formie graficznej w programie ``DIA``
+   
+----------------
  
 Rozwiązanie
 --------------
@@ -62,6 +64,18 @@ Dodanie trasy na PC1 i PC2:
 |:---------------------------|:-----------|:---------|
 |``ip route add default via``|172.22.128.1|PC2|
 |``ip route add default via``|172.22.144.1|PC1|
+
+Udostępnienie internetu dla LAN1 i LAN2
+--
+na PC1 i PC2 należy zmienić dns z uczelnianego na googlowy:
+--
+``/etc/resolv.conf`` 
+
+nameserver ``8.8.8.8``
+
+na PC0 należy włączyć przekazywanie internetu na iptables:
+--
+``iptables -t nat -A POSTROUTING -o enp0s3 -j MASQUERADE``
 
 ------------------------------------------------------
 Diagram DIA:
