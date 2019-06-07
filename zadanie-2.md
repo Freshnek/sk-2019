@@ -110,7 +110,7 @@ Poziom 0
 
 Diagram DIA
 -----------
-
+![Zadanie22](Zadanie2.svg)
 ---
 
 Konfiguracja prototypowego rozwiązania
