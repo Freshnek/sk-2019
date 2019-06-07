@@ -111,3 +111,11 @@ Poziom 0
 Diagram DIA
 -----------
 ![Zadanie2](Zadanie2.svg)
+
+---
+
+Konfiguracja prototypowego rozwiązania
+-------------------------------
+### Wlaczenie przekazywania adresów IP na Kernelu dla głównego serwera, sieci w salach i WIFI:
+``echo 1 > /proc/sys/net/ipv4/ip_forward``
+
