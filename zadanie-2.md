@@ -54,11 +54,11 @@ Podział sieci:
 ---------------
 Sieć w salach: ``188.156.220.160/28`` 
   * Podsieć: ``20.20.0.0/16``
-  * Serwer? Router?: ``20.20.0.1/16``
+  * Router: ``20.20.0.1/16``
   
 WIFI: ``188.156.220.176/28`` 
   * Podsieć: ``40.40.0.0/22``
-  * Serwer? Router?: ``40.40.0.1/22``
+  * Router: ``40.40.0.1/22``
 
 Poziom 2
 ------
@@ -70,14 +70,16 @@ Poziom 2
 
 * Ilość planowanych stanowisk razem: ``140``
 
-Adres routera na kondygnacji nr 2: ``20.20.200.1/24``
-
 | Numer sali | Adres sieci |
 |:-----------|:------------|
 | sala ``201`` | ``20.20.201.0/26`` |
+| router sala ``201`` | ``20.20.201.1/26`` |
 | sala ``202`` | ``20.20.202.0/26`` |
+| router sala ``202`` | ``20.20.202.1/26`` |
 | sala ``203`` | ``20.20.203.0/26`` |
+| router sala ``203`` | ``20.20.203.1/26`` |
 | sala ``204`` | ``20.20.204.0/26`` |
+| router sala ``204`` | ``20.20.204.1/26`` |
 
 Poziom 1
 ------
@@ -85,14 +87,16 @@ Poziom 1
 
 * Ilość istniejących stanowisk razem: ``140``
 
-Adres routera na kondygnacji nr 1: ``20.20.100.1/24``
-
 | Numer sali | Adres sieci |
 |:-----------|:------------|
 | sala ``115`` | ``20.20.115.0/26`` |
+| router sala ``115`` | ``20.20.115.1/26`` |
 | sala ``116`` | ``20.20.116.0/26`` |
+| router sala ``116`` | ``20.20.116.1/26`` |
 | sala ``117`` | ``20.20.117.0/26`` |
+| router sala ``117`` | ``20.20.117.1/26`` |
 | sala ``122`` | ``20.20.122.0/26`` |
+| router sala ``122`` | ``20.20.122.1/26`` |
 
 Poziom 0
 --------
@@ -105,20 +109,23 @@ Poziom 0
 
 * Ilość planowanych stanowisk razem: ``140``
 
-Adres routera na kondygnacji nr 0: ``20.20.1.1/24``
-
 | Numer sali | Adres sieci |
 |:-----------|:------------|
 | sala ``009`` | ``20.20.9.0/26`` |
+| router sala ``009`` | ``20.20.9.1/26`` |
 | sala ``013`` | ``20.20.13.0/26`` |
+| router sala ``013`` | ``20.20.13.1/26`` |
 | sala ``014`` | ``20.20.14.0/26`` |
+| router sala ``014`` | ``20.20.14.1/26`` |
 | sala ``017`` | ``20.20.17.0/26`` |
+| router sala ``017`` | ``20.20.17.1/26`` |
 
 #### Łącznie stanowisk planowanych: 420
 
 Diagram DIA
 ----------
 
+![zadanie 2](Zadania2.svg)
 
 ---
 
