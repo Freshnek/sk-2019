@@ -54,9 +54,11 @@ Podział sieci:
 ---------------
 Sieć w salach: ``188.156.220.160/28`` 
   * Podsieć: ``20.20.0.0/16``
+  * Serwer? Router?: ``20.20.0.1/16``
   
 WIFI: ``188.156.220.176/28`` 
   * Podsieć: ``40.40.0.0/22``
+  * Serwer? Router?: ``40.40.0.1/22``
 
 Poziom 2
 ------
@@ -67,6 +69,8 @@ Poziom 2
 * Ilość istniejących stanowisk razem: ``105``
 
 * Ilość planowanych stanowisk razem: ``140``
+
+Adres routera na kondygnacji nr 2: ``20.20.200.1/24``
 
 | Numer sali | Adres sieci |
 |:-----------|:------------|
@@ -80,6 +84,8 @@ Poziom 1
 * Istniejące sale: ``115`` ``116`` ``117`` ``122``
 
 * Ilość istniejących stanowisk razem: ``140``
+
+Adres routera na kondygnacji nr 1: ``20.20.100.1/24``
 
 | Numer sali | Adres sieci |
 |:-----------|:------------|
@@ -99,6 +105,8 @@ Poziom 0
 
 * Ilość planowanych stanowisk razem: ``140``
 
+Adres routera na kondygnacji nr 0: ``20.20.1.1/24``
+
 | Numer sali | Adres sieci |
 |:-----------|:------------|
 | sala ``009`` | ``20.20.9.0/26`` |
@@ -110,7 +118,6 @@ Poziom 0
 
 Diagram DIA
 ----------
-![Zadanie2](Zadanie2.svg)
 ---
 
 Konfiguracja prototypowego rozwiązania
