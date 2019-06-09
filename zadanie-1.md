@@ -56,7 +56,9 @@ Zmiana adresów IP:
 
 Wlaczenie przekazywania adresów IP na Kernelu na PC0:
 -------------------------------
-``echo 1 > /proc/sys/net/ipv4/ip_forward``
+W pliku: ``/etc/sysctl.d/99-sysctl.conf``
+
+Odkomentować: ``net.ipv4.ip_forward=1``
 
 Dodanie trasy na PC1 i PC2:  
 -------------------------------
