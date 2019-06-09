@@ -77,6 +77,12 @@ na PC0 należy włączyć przekazywanie internetu na iptables:
 --
 ``iptables -t nat -A POSTROUTING -o enp0s3 -j MASQUERADE``
 
+Zapisywanie ustawień iptables:
+--
+``iptables-save > /etc/iptables.conf``
+
+``iptables-restore < /etc/iptables.conf``
+
 ------------------------------------------------------
 Diagram DIA:
 ------------
