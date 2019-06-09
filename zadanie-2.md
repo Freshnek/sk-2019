@@ -119,7 +119,6 @@ Adres routera na kondygnacji nr 0: ``20.20.1.1/24``
 Diagram DIA
 ----------
 
-![zadanie 2](Zadania2.svg)
 
 ---
 
