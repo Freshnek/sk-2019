@@ -125,6 +125,8 @@ Diagram DIA
 
 Konfiguracja prototypowego rozwiązania
 -------------------------------
-### Wlaczenie przekazywania adresów IP na Kernelu dla głównego serwera, sieci w salach i WIFI:
+### Włączenie przekazywania adresów IP na Kernelu dla głównego serwera, sieci w salach i WIFI:
 ``echo 1 > /proc/sys/net/ipv4/ip_forward``
+
+
 
