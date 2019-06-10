@@ -57,8 +57,8 @@ Sieć w salach: ``188.156.220.160/28``
   * Router: ``10.10.0.1/16``
   
 WIFI: ``188.156.220.176/28`` 
-  * Podsieć: ``12.12.0.0/22``
-  * Router: ``12.12.0.1/22``
+  * Podsieć: ``10.12.0.0/22``
+  * Router: ``10.12.0.1/22``
 
 Poziom 2
 ------
@@ -125,6 +125,7 @@ Poziom 0
 Diagram DIA
 ----------
 
+![Zadanie_2](Zadania2.svg)
 
 ---
 
@@ -160,7 +161,7 @@ iface enp0s3 inet static
   netmask 255.255.255.240
   gateway 188.156.220.177
 iface enp0s8 inet static
-  address 12.12.0.1
+  address 10.12.0.1
   netmask 255.255.252.0
   gateway 188.156.220.177 
 ```
@@ -179,16 +180,16 @@ Odkomentowujemy ``DHCPDv4_CONF``
 ##### W pliku ``/etc/dhcp/dhcpd.conf`` zapisujemy naszą konfiguracje podsiecie DHCP:
 
 ```
-subnet 12.12.0.0 netmask 255.255.252.0 {
-  option routers 12.12.0.1;
+subnet 10.12.0.0 netmask 255.255.252.0 {
+  option routers 10.12.0.1;
   option subnet-mask 255.255.252.0;
-  option domain-name-servers 12.12.0.1;
-  range 12.12.0.15 12.12.3.250;
+  option domain-name-servers 10.12.0.1;
+  range 10.12.0.15 10.12.3.250;
 }
 ```
 #### Routing:
 
-``ip route add default via 12.12.0.1``
+``ip route add default via 10.12.0.1``
 
 ### Ustawienie statycznych adresów IP dla routera dla sal oraz w konkretnej sali:
 
