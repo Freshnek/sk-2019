@@ -136,6 +136,12 @@ W pliku: ``/etc/sysctl.d/99-sysctl.conf``
 
 Odkomentować: ``net.ipv4.ip_forward=1``
 
+### Ustawianie DNS dla wszystkich urządzeń:
+
+``/etc/resolv.conf``
+
+nameserver ``8.8.8.8``
+
 ### Ustawianie iptables dla serwera głównego:
 ``iptables -t nat -A POSTROUTING -s 188.156.220.160/28 -o enp0s3 -j MASQUERADE``
 
@@ -146,7 +152,7 @@ Odkomentować: ``net.ipv4.ip_forward=1``
 
 ``iptables-restore < /etc/iptables.conf``
 
-### Ustawienie statycznych adresów IP dla routera WIFI
+### Ustawienie statycznych adresów IP dla routera WIFI:
 ``` 
 auto enp0s3
 auto enp0s8
@@ -160,18 +166,18 @@ iface enp0s8 inet static
   gateway 188.156.220.177 
 ```
 
-### Ustawienie DHCP dla interfejsu routera WIFI
+### Ustawienie DHCP dla interfejsu routera WIFI:
 
-#### Instalacja isc-dhcp-server
+#### Instalacja isc-dhcp-server:
 ``apt install isc-dhcp-server``
 
-#### Konfiguracja isc-dhcp-server
+#### Konfiguracja isc-dhcp-server:
 
-##### W pliku ``/etc/default/isc-dhcp-server``
+##### W pliku ``/etc/default/isc-dhcp-server``:
 
 Odkomentowujemy ``DHCPDv4_CONF``
 
-##### W pliku ``/etc/dhcp/dhcpd.conf`` zapisujemy naszą konfiguracje podsiecie DHCP                
+##### W pliku ``/etc/dhcp/dhcpd.conf`` zapisujemy naszą konfiguracje podsiecie DHCP:
 
 ```
 subnet 40.40.0.0 netmask 255.255.252.0 {
@@ -181,7 +187,7 @@ subnet 40.40.0.0 netmask 255.255.252.0 {
   range 40.40.0.15 40.40.3.250;
 }
 ```
-#### Routing
+#### Routing:
 
 ``ip route add default via 40.40.0.1``
 
@@ -198,18 +204,18 @@ iface enp0s8 inet static
   netmask 255.255.255.192
 ```
 
-### Ustawienie DHCP dla interfejsu dla routera konkretnej sali
+### Ustawienie DHCP dla interfejsu dla routera konkretnej sali:
 
-#### Instalacja isc-dhcp-server
+#### Instalacja isc-dhcp-server:
 ``apt install isc-dhcp-server``
 
-#### Konfiguracja isc-dhcp-server
+#### Konfiguracja isc-dhcp-server:
 
-##### W pliku ``/etc/default/isc-dhcp-server``
+##### W pliku ``/etc/default/isc-dhcp-server``:
 
 Odkomentowujemy ``DHCPDv4_CONF``
 
-##### W pliku ``/etc/dhcp/dhcpd.conf`` zapisujemy naszą konfiguracje podsiecie DHCP                
+##### W pliku ``/etc/dhcp/dhcpd.conf`` zapisujemy naszą konfiguracje podsiecie DHCP:
 
 ```
 subnet 20.20.115.0 netmask 255.255.255.192 {
@@ -219,7 +225,7 @@ subnet 20.20.115.0 netmask 255.255.255.192 {
   range 20.20.115.2 20.20.115.63;
 }
 ```
-#### Routing
+#### Routing:
 
 ``ip route add default via 20.20.0.1``
 
